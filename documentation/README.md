@@ -170,9 +170,11 @@ noClip() //retourne un boolean, donne si le joueur est en phase de noclip ou pas
 
 setNoClip() //défini si le joueur est en phase de noclip ou pas
 
-getBoundingBox() //retourne un ApiAxisAlignedBoundingBox, donne la boite de collision du joueur
+getBoundingBox() //retourne un ApiAxisAlignedBoundingBox, donne la boite de collision de l'entitée
 
-setPosition(double posX, double posY, double posZ) //défini la position du joueur
+setPosition(double posX, double posY, double posZ) //défini la position de l'entitée
+
+setRotation(float yaw, float pitch) //défini la rotation de l'entitée
 
 getDistanceTo(ApiEntity entity) //retourne un double, donne la distance entre cette entitée et une autre
 
@@ -530,7 +532,7 @@ drawGradientRectangle(int x, int y, int width, int height, int color1, int color
 drawSideGradientRect(float x, float y, float width, float height, int color1, int color2) //dessine un rectangle avec dégradé dans un sens différent que la première fonction
 ```
 
-### MIsc
+### Misc
 
 **Misc** regroupe le reste.
 
